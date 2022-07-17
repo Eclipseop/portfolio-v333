@@ -11,7 +11,7 @@ const About: NextPage = () => {
       <Embedded>
         Hi there!
         <br /><br />
-        I&apos;m MacKenzie, a software engineer based in Minneapolis, MN. 
+        I&apos;m MacKenzie, a software engineer based in Minneapolis, MN.
         I am currently working at BestBuy working on data pipelines on the Enterprise Data Platform team.
       </Embedded>
       <h2 className="font-semibold text-xl">Stuff I Like</h2>
@@ -21,7 +21,7 @@ const About: NextPage = () => {
         <li>Mathematics</li>
       </ul>
       <h2 className="font-semibold text-xl">Socials</h2>
-      <EmojiLink page={{text: 'GitHub', link: 'https://github.com/Eclipseop', emoji:<FaGithub />}} />
+      <EmojiLink page={{ text: 'GitHub', link: 'https://github.com/Eclipseop', emoji: <FaGithub /> }} />
     </Layout>
   )
 }

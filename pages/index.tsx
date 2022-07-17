@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Embedded>
       <div className="flex flex-col">
         {pages.map((page) => <EmojiLink key={page.link} page={page} />)}
-        </div>
+      </div>
     </Layout>
   )
 }
