@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
   const [repos, setRepos] = useState<GHInformation[]>();
 
   useEffect(() => {
-    const projects = ['CrackUpdater', 'KeebFinder', 'osrs-gamepack-downloader'];
+    const projects = ['CrackUpdater', 'KeebFinder', 'osrs-gamepack-downloader', 'portfolio-v333'];
 
     const execute = async () => {
       const ghRepos: GHInformation[] = []
