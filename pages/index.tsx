@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Embedded from "../components/Embedded";
 import EmojiLink, { Page } from "../components/EmojiLink";
-import Header from "../components/Header";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
