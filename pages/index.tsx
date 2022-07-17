@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         I&apos;m MacKenzie, a software engineer based in Minneapolis, MN. I am currently working at BestBuy working on data pipelines.
       </Embedded>
       <div className="flex flex-col">
-        {pages.map((page) => <EmojiLink key={page.emoji} page={page} />)}
+        {pages.map((page) => <EmojiLink key={page.link} page={page} />)}
         </div>
     </Layout>
   )
