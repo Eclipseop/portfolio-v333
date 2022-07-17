@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout"
 import { GHInformation } from "../types/GHInformation";
+import { FaStar } from "react-icons/fa";
 
 const Card = ({ repo }: { repo: GHInformation }) => {
   return (
@@ -19,7 +20,7 @@ const GHCard = ({ repo }: { repo: GHInformation }) => {
       <img src={repo.owner.avatar_url} alt="owner avatar" className="rounded-full h-8 w-8" />
       <div className="leading-none">
         <h2 className="text-sm font-semibold">{repo.name}</h2>
-        <span className="text-xs text-gray-400">{repo.owner.login} • Updated {repo.pushed_at.split('T')[0]}</span>
+        <span className="text-xs text-gray-400 flex items-center gap-1">{repo.owner.login} • <FaStar /> {repo.stargazers_count} • Updated {repo.pushed_at.split('T')[0]}</span>
       </div>
     </a>
   )
