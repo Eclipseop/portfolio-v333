@@ -49,7 +49,7 @@ const Projects: NextPage = () => {
 
   return (
     <Layout title="Projects" emoji="🔧">
-      <div className="flex flex-col space-y-3">
+      <div className="flex flex-col space-y-4">
         {repos?.map((repo) => <Card key={repo.id} repo={repo} />)}
       </div>
     </Layout>
