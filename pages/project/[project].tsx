@@ -23,24 +23,24 @@ const Project: NextPage = () => {
     load()
   }, [project])
 
-  if (repo === undefined || info === undefined) {
-    return <div>Is loading :3</div>
-  }
-
   return (
     <Layout title={project as string ?? ""} emoji="🔧">
-      <GitHubCard repo={repo} />
-      <ReactMarkdown
-        components={{
-          h1: ({ node, children, ...props }) => <h1 className="font-semibold text-3xl">{children}</h1>,
-          h2: ({ node, children, ...props }) => <h2 className="font-semibold text-2xl">{children}</h2>,
-          li: ({ node, children, ...props }) => <li className="ml-5 list-disc">{children}</li>,
-          a: ({ node, children, ...props }) => <a href={props.href} className="text-blue-400 hover:text-blue-500">{children as string}</a>,
-          pre: ({ node, children, ...props }) => <Embedded>{children}</Embedded>,
-        }}
-      >
-        {info ?? ""}
-      </ReactMarkdown>
+      {
+        repo === undefined ? <div>Loading :3</div> : <>
+          <GitHubCard repo={repo} />
+          <ReactMarkdown
+            components={{
+              h1: ({ node, children, ...props }) => <h1 className="font-semibold text-3xl">{children}</h1>,
+              h2: ({ node, children, ...props }) => <h2 className="font-semibold text-2xl">{children}</h2>,
+              li: ({ node, children, ...props }) => <li className="ml-5 list-disc">{children}</li>,
+              a: ({ node, children, ...props }) => <a href={props.href} className="text-blue-400 hover:text-blue-500">{children as string}</a>,
+              pre: ({ node, children, ...props }) => <Embedded>{children}</Embedded>,
+            }}
+          >
+            {info ?? ""}
+          </ReactMarkdown>
+        </>
+      }
     </Layout>
   )
 }
