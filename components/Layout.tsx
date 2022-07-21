@@ -12,6 +12,7 @@ const Layout = ({ children, emoji, title }: LayoutProps) => {
     <>
       <Head>
         <title>{`${title} | otterdev`}</title>
+        <link rel="favicon" href="/favicon.ico" />
       </Head>
       <Header />
       <main>
