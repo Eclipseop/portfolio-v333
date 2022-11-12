@@ -1,5 +1,5 @@
-import { FaGithub, FaStar } from "react-icons/fa"
-import { GHInformation } from "../types/GHInformation"
+import { FaGithub, FaStar } from "react-icons/fa";
+import { GHInformation } from "../types/GHInformation";
 
 const GitHubCard = ({ repo }: { repo: GHInformation }) => {
   return (
@@ -16,7 +16,7 @@ const GitHubCard = ({ repo }: { repo: GHInformation }) => {
         </span>
       </div>
     </a>
-  )
-}
+  );
+};
 
 export default GitHubCard;

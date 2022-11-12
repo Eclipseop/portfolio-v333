@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { Page } from "../app/EmojiLink";
+import { Page } from "./EmojiLink";
 
 const CustomLink = ({ page }: { page: Page }) => {
   return (
@@ -11,10 +10,8 @@ const CustomLink = ({ page }: { page: Page }) => {
   );
 };
 
-const Header = () => {
-  const router = useRouter();
-  const path = router.asPath;
-  const dirs = path.substring(1).split('/');
+const Header = ({currentRoute}: {currentRoute: string}) => {
+  const dirs = currentRoute.substring(1).split('/');
 
   const getBreadcrumbs = () => {
     const links = [];

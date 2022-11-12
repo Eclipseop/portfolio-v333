@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fix": "next lint --fix"
   },
   "dependencies": {
     "next": "^13.0.0",
@@ -19,6 +20,7 @@
     "@types/node": "^18.0.5",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.20.0",
     "eslint-config-next": "^12.2.2",

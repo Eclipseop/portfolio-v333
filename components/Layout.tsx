@@ -28,7 +28,7 @@ const Layout = ({ children, emoji, title }: LayoutProps) => {
         </div>
       </main>
     </>
-  )
-}
+  );
+};
 
 export default Layout;

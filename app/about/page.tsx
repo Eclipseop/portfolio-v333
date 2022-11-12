@@ -1,13 +1,11 @@
-import { NextPage } from "next";
-import Embedded from "../components/Embedded";
-import EmojiLink from "../components/EmojiLink";
-import Layout from "../components/Layout";
-
+import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Embedded from '../Embedded';
+import EmojiLink from '../EmojiLink';
 
-const About: NextPage = () => {
+const About = () => {
   return (
-    <Layout title="About" emoji="📰">
+    <div>
       <Embedded>
         Hi there!
         <br /><br />
@@ -22,7 +20,7 @@ const About: NextPage = () => {
       </ul>
       <h2 className="font-semibold text-xl">Socials</h2>
       <EmojiLink page={{ text: 'GitHub', link: 'https://github.com/Eclipseop', emoji: <FaGithub /> }} />
-    </Layout>
+    </div>
   )
 }
 
