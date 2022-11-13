@@ -45,7 +45,7 @@ const determinePageInfo = (path: string): PageInfo => {
   };
 };
 
-const RootLayout = ({ children }: React.PropsWithChildren<never>) => {
+const RootLayout = ({ children }: React.PropsWithChildren<any>) => {
   const pathName = usePathname();
 
   const pageInfo = determinePageInfo(pathName!);
