@@ -21,7 +21,7 @@ const About = () => {
       <h2 className="font-semibold text-xl">Socials</h2>
       <EmojiLink page={{ text: 'GitHub', link: 'https://github.com/Eclipseop', emoji: <FaGithub /> }} />
     </div>
-  )
-}
+  );
+};
 
 export default About;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Embedded from './Embedded';
 import EmojiLink, { Page } from './EmojiLink';
 
@@ -24,7 +24,7 @@ const Home = () => {
         {pages.map((page) => <EmojiLink key={page.link} page={page} />)}
       </div>
     </section>
-  )
+  );
 };
 
 export default Home;

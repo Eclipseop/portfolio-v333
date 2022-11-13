@@ -1,5 +1,5 @@
 import { FaGithub, FaStar } from "react-icons/fa";
-import { GHInformation } from "../types/GHInformation";
+import { GHInformation } from "../../types/GHInformation";
 
 const GitHubCard = ({ repo }: { repo: GHInformation }) => {
   return (

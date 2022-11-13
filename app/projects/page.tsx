@@ -10,7 +10,6 @@ const Projects = () => {
       {projects.map((project) => <EmojiLink key={project} page={{ text: project, link: `/project/${project}`, emoji: <FaCode /> }} />)}
     </div>
   );
+};
 
-}
-
-export default Projects
+export default Projects;

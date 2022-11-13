@@ -8,8 +8,8 @@ const getData = async (project: string) => {
   const repoInfo: GHInformation = await (await fetch(`https://api.github.com/repos/Eclipseop/${project}`)).json();
   const repoReadMe = await (await fetch(`https://raw.githubusercontent.com/Eclipseop/${project}/main/README.md`)).text();
 
-  return { repoInfo, repoReadMe }
-}
+  return { repoInfo, repoReadMe };
+};
 
 const Project = async ({ params: { project } }: {params: {project: string}}) => {
   const { repoInfo, repoReadMe } = await getData(project);
@@ -30,7 +30,7 @@ const Project = async ({ params: { project } }: {params: {project: string}}) => 
         {repoReadMe ?? ""}
       </ReactMarkdown>
     </div>
-  )
-}
+  );
+};
 
 export default Project;
